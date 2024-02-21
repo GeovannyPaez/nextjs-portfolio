@@ -1,39 +1,26 @@
 "use client";
-import React from "react";
-import dynamic from "next/dynamic";
+import { ProjectsData } from "@/data";
+import AnimatedNumbers from "react-animated-numbers";
 
-const AnimatedNumbers = dynamic(
-  () => {
-    return import("react-animated-numbers");
-  },
-  { ssr: false }
-);
+
 
 const achievementsList = [
   {
     metric: "Projects",
-    value: "100",
+    value: ProjectsData.length.toString(),
     postfix: "+",
   },
   {
-    prefix: "~",
-    metric: "Users",
-    value: "100,000",
-  },
-  {
-    metric: "Awards",
-    value: "7",
-  },
-  {
-    metric: "Years",
-    value: "5",
+    metric: "Experience",
+    value: "2",
+    postfix: "+ Years",
   },
 ];
 
 const AchievementsSection = () => {
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-around">
         {achievementsList.map((achievement, index) => {
           return (
             <div
@@ -43,6 +30,7 @@ const AchievementsSection = () => {
               <h2 className="text-white text-4xl font-bold flex flex-row">
                 {achievement.prefix}
                 <AnimatedNumbers
+                  key={achievement.value + "-" + index}
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
