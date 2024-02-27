@@ -31,7 +31,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, technolog
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="bg-white text-[#181818] px-2 py-1 rounded-full hover:bg-[#ADB7BE] hover:text-[#181818] transition-all duration-300 cursor-default"
+              className="bg-primary-600 text-secondary px-2 py-1 rounded-full hover:bg-primary-700 transition-all duration-300 cursor-default"
             >
               {tech}
             </span>

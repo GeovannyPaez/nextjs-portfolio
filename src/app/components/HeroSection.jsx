@@ -46,11 +46,12 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              target="_blank"
+              href="https://docs.google.com/document/d/1DQRVOQ6hCf9ydWzbkrhDM-2Od63x0VLP/edit?usp=sharing&ouid=100418701712062194591&rtpof=true&sd=true"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+                View CV
               </span>
             </Link>
           </div>
@@ -63,10 +64,11 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.jpg"
+              src="/images/hero-image-red.jpg"
               alt="hero image"
+              priority
               className="absolute transform h-full w-full -translate-x-1/2 rounded-full -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
+              width={400}
               height={300}
             />
           </div>

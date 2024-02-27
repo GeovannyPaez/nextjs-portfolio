@@ -15,7 +15,7 @@ export const ProjectsData = [
         title: "Todo App",
         description: "In collaboration with platzi courses, this app was made to save our daily to-do lists. Each task has the options to complete, edit, and delete.",
         image: "/images/projects/todo-list.png",
-        technologies: ["React.js", "Bootstrap", "CSS"],
+        technologies: ["React.js", "Bootstrap", "CSS", "HTML5"],
         tag: ["All", "Web"],
         previewUrl: "https://practice-react-app-todo.netlify.app/#/",
         gitUrl: "https://github.com/GeovannyPaez/intro_react-app-todo"
@@ -82,7 +82,6 @@ export const SkillsData = [
         title: "Testing",
         skills: [
             "Jest",
-            "Mocha",
             "JUnit",
             "Mockito",
             "Cypress",
@@ -94,7 +93,6 @@ export const SkillsData = [
             "Agile",
             "Scrum",
             "JIRA",
-            "Slack",
         ],
     },
 ];
