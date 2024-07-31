@@ -1,4 +1,3 @@
-
 export const ProjectsData = [
     {
         id: 1,
@@ -29,6 +28,14 @@ export const ProjectsData = [
         tag: ["All", "Web"],
         previewUrl: "https://geovannypaez.github.io/Landing_Page-De-Market-Place/src/index.html",
         gitUrl: "https://github.com/GeovannyPaez/Landing_Page-De-Market-Place"
+    }, {
+        id: 4,
+        title: "Recypaid",
+        description: "Recypaid is a web application that allows users to recycle from their homes, the user can request the service through the web application, the company will send a truck to the user's home to collect the recyclable material, and the user will receive a payment for the material delivered.",
+        image: "/images/projects/recypaid.png",
+        technologies: ["Next Js", "Nest Js", "TypeScript", "React", "PostgreSQL", "Tailwind CSS"],
+        tag: ["All", "Web"],
+        previewUrl: "https://recypaid.com",
     }
 ];
 
@@ -53,11 +60,9 @@ export const SkillsData = [
         title: "Backend",
         skills: [
             "Node.js",
-            "Express",
-            "Java",
-            "Spring Boot",
-            "Python",
-            "Django",
+            "Express Js",
+            "Nest Js",
+            "GraphQL",
         ],
     },
     {
@@ -83,7 +88,6 @@ export const SkillsData = [
         skills: [
             "Jest",
             "JUnit",
-            "Mockito",
             "Cypress",
         ],
     },
@@ -93,6 +97,7 @@ export const SkillsData = [
             "Agile",
             "Scrum",
             "JIRA",
+            "Microservices",
         ],
     },
 ];

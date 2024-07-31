@@ -9,7 +9,7 @@ export default function SkillsContent() {
                     return (
                         <div key={index} className="flex flex-col items-center justify-start">
                             <h3 className="text-xl font-bold text-white mb-2">{skill.title}</h3>
-                            <ul className="list-disc pl-2">
+                            <ul className="list pl-2">
                                 {skill.skills.map((item, index) => {
                                     return <li key={index}>{item}</li>
                                 })}
